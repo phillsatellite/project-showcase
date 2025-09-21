@@ -1,0 +1,13 @@
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0 1rem 1rem;
+  max-height: 500px;
+  min-height: 400px;
+  overflow-y: auto;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0 20px 0 rgb(28, 28, 28);
+}
