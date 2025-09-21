@@ -7,6 +7,6 @@ A responsive React app for showcasing creative agency projects. Users can add, s
 
 ##How to run locally 
 - Clone the repo 
-- cd project=showcase
+- cd project-showcase
 - npm install
 - npm run dev
