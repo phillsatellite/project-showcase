@@ -24,8 +24,19 @@
   color: #b0b0b0;
 }
 
-.edit, .delete, .save, .cancel {
+.edit, .save, .cancel {
   background-color: #5359cd;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-top: 10px;
+}
+
+.delete {
+  background-color: rgba(255, 0, 0, 0.75);
   border: none;
   color: white;
   padding: 0.6rem 1rem;
