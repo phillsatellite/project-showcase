@@ -5,7 +5,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  min-height: 100%;
 }
 
 .projectImage {
@@ -13,7 +14,7 @@
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .ProjectCard h4 {
