@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import projectData from "../data/projects";
+import projectData from "../data/projects.jsx";
 import ProjectCard from "./ProjectCard";
 import ProjectForm from "./ProjectForm";
 import SearchBar from "./SearchBar";
