@@ -29,18 +29,14 @@ function ProjectList(){
     }
 
     //Filter projects by search and case-insensitive 
-    const displayedProjects = projects.filter((project) => {
-        if(!searchedProject) return true;
-        return (
-            project.title &&
-            project.title.toLowerCase().includes(searchedProject.toLowerCase())
-        );
-    });
+    const displayedProjects = projects.filter((p) => 
+        !searchedProject ? true : (p.title ?? "").toLowerCase().includes(searchedProject.toLowerCase())
+    );
 
     return (
         <div>
             {/* Form for adding or editing projects */}
-            <ProjectForm
+            <ProjectForm 
             onAddProject={addProject}
             onUpdateProject={updateProject}
             editingProject={editingProject}
@@ -49,9 +45,11 @@ function ProjectList(){
             <div className="project-list">
                 {/* Search input (live filter) */}
                 <SearchBar onSearchSubmit={setSearchedProject} />
-                {displayedProjects.length === 0 && searchedProject && (
-                    <p className="no-results">No match found</p>
-        )}
+                
+                {displayedProjects.length === 0 && (
+                    <div className="project-empty">No match found.</div>
+                )}
+
                 {/* Render filtered project cards */}
                     {displayedProjects.map(proj => (
                         <ProjectCard

@@ -43,6 +43,7 @@ function ProjectForm({onAddProject}){
 
             <div>
                 <input  
+                className="img-input"
                 type="text"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}

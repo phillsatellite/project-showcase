@@ -8,6 +8,16 @@
   overflow-y: auto;
   background-color: rgb(28, 28, 28);
   border-radius: 10px;
-  margin-top: 50px;
-  box-shadow: 0 20px 0 rgb(28, 28, 28);
+  margin-top: 30px;
+  box-shadow: 0 17px 4px rgb(28, 28, 28);
+  position: relative;
+}
+
+.project-empty {
+  grid-column: 1 / -1;
+  padding: .75rem 0 1rem;
+  color: #cfcfcf;
+  opacity: .9;
+  text-align: center;
+  font-size: 1.3rem;
 }

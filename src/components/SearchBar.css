@@ -11,6 +11,8 @@
   padding-top: 1rem;
   margin-top: 0;
   display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .searchBox input {
@@ -23,11 +25,13 @@
   font-size: 1rem;
   outline: none;
   width: 80%;
+  height: 20px;
+
 }
 
 .searchBox input::placeholder {
     color: white;
-    opacity: 1;
+    opacity: .7;
 }
 
 .searchBox input:focus {
@@ -44,4 +48,5 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
   margin-left: 5px;
+  height: 44px;
 }
